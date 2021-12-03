@@ -1,5 +1,6 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
+// eslint-disable-next-line
 import Chart from 'chart.js/auto'
 import { Col, Row, Typography } from 'antd';
 
@@ -42,18 +43,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
             ],
         },
     };
-    // const options = {
-    //     responsive: true,
-    //     plugins: {
-    //         legend: {
-    //             position: 'top',
-    //         },
-    //         title: {
-    //             display: true,
-    //             text: 'Chart.js Line Chart',
-    //         },
-    //     },
-    // };
+
     return (
         <>
             <Row className="chart-header">
