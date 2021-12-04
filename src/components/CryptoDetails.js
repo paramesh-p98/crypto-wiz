@@ -23,7 +23,7 @@ const CryptoDetails = () => {
 
     if (isFetching) return <Loader />;
 
-    const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
+    const time = ['24h', '7d', '30d', '1y', '3m', '3y', '5y'];
 
 
     const stats = [
@@ -88,6 +88,11 @@ const CryptoDetails = () => {
                         </Col>
                     ))}
                 </Col>
+                <Col className="coin-value-statistics-heading">
+                    <Title level={1} className="coin-details-heading">
+                        vs
+                    </Title>
+                </Col>
                 <Col className="other-stats-info">
                     <Col className="coin-value-statistics-heading">
                         <Title level={3} className="coin-details-heading">
@@ -131,7 +136,7 @@ const CryptoDetails = () => {
                     ))}
                 </Col>
             </Col>
-        </Col>
+        </Col >
     )
 }
 
