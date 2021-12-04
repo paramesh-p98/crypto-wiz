@@ -26,12 +26,12 @@ const Exchanges = () => {
             <Row>
                 {exchangesList.map((exchange) => (
                     <Col span={24}>
-                        <Collapse >
+                        <Collapse>
                             <Panel
                                 key={exchange.id}
                                 showArrow={false}
                                 header={(
-                                    <Row >
+                                    <Row key={exchange.id}>
                                         <Col span={6}>
                                             <Text><strong>{exchange.rank}.</strong></Text>
                                             <Avatar className="exchange-image" src={exchange.iconUrl} />
@@ -42,7 +42,6 @@ const Exchanges = () => {
                                         <Col span={6}>{millify(exchange.marketShare)}%</Col>
                                     </Row>
                                 )}
-
                             >
                                 {HTMLReactParser(exchange.description || '')}
                             </Panel>
